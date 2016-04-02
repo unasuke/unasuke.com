@@ -1,0 +1,19 @@
+{
+  "name": "unasuke.com",
+  "version": "0.1.0",
+  "description": "unasuke.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/unasuke/unasuke.com.git"
+  },
+  "author": "Yusuke Nakamura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unasuke/unasuke.com/issues"
+  },
+  "homepage": "https://github.com/unasuke/unasuke.com#readme",
+}
