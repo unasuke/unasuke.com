@@ -23,6 +23,7 @@ configure :development do
   activate :livereload
 end
 
+activate :directory_indexes
 ###
 # Helpers
 ###
