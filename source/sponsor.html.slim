@@ -1,0 +1,28 @@
+---
+ title: "sponsor | unasuke.com"
+---
+
+- sponsors = YAML.load(File.read(File.join("source", "data", "sponsors.yml")))
+= stylesheet_link_tag :sponsor
+
+section.greeting
+  .message  
+    h1
+      | They are sponsors of the "unasuke.com".
+    p
+      | Many thanks!
+section.sponsors
+  - sponsors.each_slice(3) do |_sponsors|
+    .row
+      - _sponsors.each do |person, data|
+        .sponsor
+          .card
+            = image_tag "sponsors/#{data['image']}", class: "image"
+            .name
+              = data["name"]
+            .account
+              span: i.fa.fa-twitter
+              span
+                a.link[href="https://twitter.com/#{data["twitter"]}"]
+                  = data["twitter"]
+section.link-to-sponsor
