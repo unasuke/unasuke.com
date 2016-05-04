@@ -15,22 +15,49 @@ a.link {
   }
 }
 
+section.main, section.contents, section.links {
+  @include shift(4);
+  font-size: 1.5rem;
+
+  @include media(min-width 0 max-width 426px) {
+    @include shift(1);
+    font-size: 1rem;
+  }
+}
+
 .main {
-  padding-top: 30vh;
-  .site-title {
-    @include span-columns(4);
-    @include shift(4);
-    text-align: center;
+  padding-top: 20vh;
+
+  h1.site-title {
+    text-align: left;
     font-size: 6rem;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+
+  @include media(min-width 0 max-width 426px) {
+    padding-top: 5vh;
+
+    h1.site-title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+section.contents {
+  ul.list-of-contents {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .links {
-  @include span-columns(4);
-  @include shift(4);
-  font-size: 1.5rem;
-
   ul.list-of-accounts {
+    padding: 0;
     list-style-type: none;
 
     li {
@@ -39,8 +66,7 @@ a.link {
   }
 
   .fa {
-    width: 50px;
-    font-size: 2rem;
+    width: 40px;
+    font-size: 1.5rem;
   }
-
 }
