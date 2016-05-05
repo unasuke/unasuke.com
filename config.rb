@@ -9,6 +9,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+set :css_dir, 'stylesheets/dest/'
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -43,3 +45,8 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :external_pipeline,
+  name: :npm,
+  command: "npm run sass",
+  source: ".tmp/dest"
