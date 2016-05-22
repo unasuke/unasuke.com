@@ -8,5 +8,6 @@ html
     title= current_page.data.title
     = stylesheet_link_tag :base
     = javascript_include_tag :all
+    = partial "layouts/google_analytics"
   body[class="#{page_classes}"]
     = yield
