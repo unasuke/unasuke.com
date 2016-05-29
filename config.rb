@@ -8,6 +8,8 @@
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/404.html', layout: false
+page '/500.html', layout: false
 
 set :css_dir, 'stylesheets/dest/'
 
