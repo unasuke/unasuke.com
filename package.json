@@ -4,7 +4,7 @@
   "description": "unasuke.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "for file in `ls -1 source/stylesheets/[!_]*.scss`; do node-sass $file -o source/stylesheets/dest/; done"
+    "scss": "for file in `ls -1 source/stylesheets/src/[!_]*.scss`; do node-sass $file -o source/stylesheets/; done"
   },
   "repository": {
     "type": "git",

@@ -11,7 +11,7 @@ page '/*.txt', layout: false
 page '/404.html', layout: false
 page '/500.html', layout: false
 
-set :css_dir, 'stylesheets/dest/'
+set :css_dir, 'stylesheets'
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
@@ -50,5 +50,5 @@ end
 
 activate :external_pipeline,
   name: :npm,
-  command: "npm run sass",
+  command: "npm run scss",
   source: ".tmp/dest"
