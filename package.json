@@ -4,7 +4,7 @@
   "description": "unasuke.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "for file in `ls -1 source/stylesheets/[!_]*.scss`; do node-sass $file -o source/stylesheets/dest/; done"
+    "scss": "for file in `ls -1 source/stylesheets/src/[!_]*.scss`; do node-sass $file -o source/stylesheets/; done"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/unasuke/unasuke.com#readme",
   "devDependencies": {
-    "node-sass": "^3.4.2"
+    "node-sass": "^4.1.1",
+    "yarn": "^0.18.1"
   }
 }
