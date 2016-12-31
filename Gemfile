@@ -4,6 +4,5 @@ gem 'middleman', '>= 4.0.0'
 gem 'middleman-livereload'
 
 gem 'slim'
-gem 'sass'
 gem 'bourbon'
 gem 'neat'
