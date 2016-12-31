@@ -120,7 +120,6 @@ DEPENDENCIES
   middleman (>= 4.0.0)
   middleman-livereload
   neat
-  sass
   slim
 
 BUNDLED WITH
