@@ -1,3 +1,18 @@
+GIT
+  remote: https://github.com/fredjean/middleman-s3_sync.git
+  revision: d7a55c89ca02b5ed603c1f183c24665c94547005
+  specs:
+    middleman-s3_sync (4.0.3)
+      ansi (~> 1.5.0)
+      fog-aws (>= 0.1.1)
+      map
+      middleman-cli
+      middleman-core (>= 4.0.0)
+      mime-types (~> 3.1)
+      parallel
+      ruby-progressbar
+      unf
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -101,15 +116,9 @@ GEM
       em-websocket (~> 0.5.1)
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
-    middleman-s3_sync (4.0.3)
-      ansi (~> 1.5.0)
-      fog-aws (>= 0.1.1)
-      map
-      middleman-cli
-      middleman-core (>= 4.0.0)
-      parallel
-      ruby-progressbar
-      unf
+    mime-types (3.1)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2016.0521)
     mini_portile2 (2.2.0)
     minitest (5.10.1)
     multi_json (1.12.1)
@@ -157,9 +166,9 @@ DEPENDENCIES
   bourbon
   middleman (>= 4.0.0)
   middleman-livereload
-  middleman-s3_sync
+  middleman-s3_sync!
   neat
   slim
 
 BUNDLED WITH
-   1.15.0
+   1.15.1
