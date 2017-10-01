@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/unasuke/unasuke.com#readme",
   "devDependencies": {
-    "node-sass": "^4.1.1",
-    "yarn": "^0.18.1"
+    "node-sass": "^4.1.1"
   }
 }
