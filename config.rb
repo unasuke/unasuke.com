@@ -49,8 +49,8 @@ configure :build do
 end
 
 activate :external_pipeline,
-  name: :npm,
-  command: "npm run scss",
+  name: :webpack,
+  command: "npm run build#{build? ? '': ':watch'}",
   source: ".tmp/dest"
 
 activate :s3_sync do |s3_sync|

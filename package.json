@@ -4,7 +4,8 @@
   "description": "unasuke.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "for file in `ls -1 source/stylesheets/src/[!_]*.scss`; do node-sass $file -o source/stylesheets/; done"
+    "build": "webpack",
+    "build:watch": "webpack --progress --watch"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,10 @@
   },
   "homepage": "https://github.com/unasuke/unasuke.com#readme",
   "devDependencies": {
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
     "node-sass": "^4.1.1",
-    "yarn": "^0.18.1"
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.6.0"
   }
 }
