@@ -4,8 +4,8 @@
   "description": "unasuke.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "build:watch": "webpack --progress --watch"
+    "build": "gulp build",
+    "build:watch": "gulp build:watch"
   },
   "repository": {
     "type": "git",
