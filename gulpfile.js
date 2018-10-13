@@ -19,10 +19,10 @@ gulp.task('sponsor.scss', () => {
     .pipe(gulp.dest('./source/stylesheets/'));
 })
 
-gulp.task('build', ['base.scss', 'index.scss', 'sponsor.scss']);
+gulp.task('build', gulp.parallel('base.scss', 'index.scss', 'sponsor.scss'));
 gulp.task('build:watch', () => {
   return gulp.watch(
     './source/stylesheets/src/*.scss',
-    ['base.scss', 'index.scss', 'sponsor.scss']
+    gulp.parallel('base.scss', 'index.scss', 'sponsor.scss')
   )
 });
