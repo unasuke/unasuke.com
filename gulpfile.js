@@ -19,10 +19,22 @@ gulp.task('sponsor.scss', () => {
     .pipe(gulp.dest('./source/stylesheets/'));
 })
 
-gulp.task('build', gulp.parallel('base.scss', 'index.scss', 'sponsor.scss'));
+gulp.task('activity.scss', () => {
+  return gulp.src('./source/stylesheets/src/activity.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./source/stylesheets/'));
+})
+
+gulp.task('aboutme.scss', () => {
+  return gulp.src('./source/stylesheets/src/aboutme.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./source/stylesheets/'));
+})
+
+gulp.task('build', gulp.parallel('base.scss', 'index.scss', 'sponsor.scss', 'activity.scss', 'aboutme.scss'));
 gulp.task('build:watch', () => {
   return gulp.watch(
     './source/stylesheets/src/*.scss',
-    gulp.parallel('base.scss', 'index.scss', 'sponsor.scss')
+    gulp.parallel('base.scss', 'index.scss', 'sponsor.scss', 'activity.scss', 'aboutme.scss')
   )
 });
