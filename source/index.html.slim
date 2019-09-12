@@ -4,50 +4,41 @@
 
 = stylesheet_link_tag :index
 
-section.main
-  h1.site-title
-    | unasuke.com
-section.contents
-  h2
-    | contents
-  ul.list-of-contents
-    li
-      a.link[href="/sponsor"]
-        | sponsor
-    li
-      a.link[href="https://blog.unasuke.com"]
-        | blog
-section.links
-  h2
-    | links
-  ul.list-of-accounts
-    li
-      span: i.fab.fa-github
-      span
-        a.link[href="https://github.com/unasuke"]
-          | unasuke
-    li
-      span: i.fab.fa-mastodon
-      span
-        a.link[href="https://mstdn.unasuke.com/@unasuke" rel="me"]
-          | unasuke@mstdn.unasuke.com (primary)
-    li
-      span: i.fab.fa-mastodon
-      span
-        a.link[href="https://mstdn.maud.io/@unasuke" rel="me"]
-          | unasuke@mstdn.maud.io (secondary)
-    li
-      span: i.fab.fa-twitter
-      span
-        a.link[href="https://twitter.com/yu_suke1994"]
-          | yu_suke1994
-    li
-      span: i.fab.fa-tumblr
-      span
-        a.link[href="http://yusuke1994.tumblr.com/"]
-          | yusuke1994.tumblr.com
-    li
-      span: i.fab.fa-keybase
-      span
-        a.link[href="https://keybase.io/unasuke"]
-          | unasuke
+section.index
+  div.border-container
+    div.title-container
+      div.circle
+      section.title
+        h1.site-title
+          | unasuke.com
+    section.contents
+      ul.list-of-contents
+        li
+          a.link[href="/aboutme"]
+            | About me
+        li
+          a.link[href="/activity"]
+            | Activity
+        li
+          a.link[href="/sponsor"]
+            | Sponsor
+        li
+          a.link[href="https://blog.unasuke.com"]
+            | Blog
+        li
+          a.link[href="https://docs.google.com/forms/d/e/1FAIpQLSf-loEvN1RZdezkEWPBwNLygM3IjPkJbhGVStRTmm-jk3oXiw/viewform" target="_blank"]
+            | Contact (Google Forms)
+    section.links
+      ul.list-of-accounts
+        li
+          | Twitter : 
+          a(href="https://twitter.com/yu_suke1994") yu_suke1994
+        li
+          | GitHub : 
+          a(href="https://github.com/unasuke") unasuke
+        li
+          | Mastodon : 
+          a(href="https://mstdn.unasuke.com/@unasuke") unasuke@mstdn.unasuke.com
+        li
+          | Keybase.io : 
+          a(href="https://keybase.io/unasuke") unasuke
