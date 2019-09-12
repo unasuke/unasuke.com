@@ -1,0 +1,128 @@
+= stylesheet_link_tag :activity
+
+section.activity
+  h1 Activity
+  section.works
+    h2 Works
+    h3 Rubygems
+    dl
+      dt: a(href="https://rubygems.org/gems/middleman-hatenastar") https://rubygems.org/gems/middleman-hatenastar
+      dd Middlemanで生成したページにはてなスターを付与するgem
+
+      dt: a(href="https://rubygems.org/gems/middleman-somemoji") https://rubygems.org/gems/middleman-somemoji
+      dd Middleman内でemoji表記を使用でき、emojiのstyleも選択できるようにするgem
+
+      dt: a(href="https://rubygems.org/gems/mikoshi") https://rubygems.org/gems/mikoshi
+      dd ERBを評価した結果のYAMLを用いてECSにdeployするCLI gem (archived)
+
+      dt: a(href="https://rubygems.org/gems/openapi3_definition_generator-rails") https://rubygems.org/gems/openapi3_definition_generator-rails
+      dd config/routes.rb の内容からOpenAPI 3の定義を生成するgem
+
+      dt: a(href="https://rubygems.org/gems/unasukecop") https://rubygems.org/gems/unasukecop
+      dd 自分用RuboCop rule集
+
+  section.oss
+    h2 Open Source Software
+    h3 Maintainer
+    dl
+      dt: a(href="https://github.com/itamae-kitchen/itamae") https://github.com/itamae-kitchen/itamae
+      dd ChefやAnsibleなどの構成管理ツールのひとつ
+
+      dt: a(href="https://github.com/ksss/tori") https://github.com/ksss/tori
+      dd "very very simple file uploader"
+
+      dt: a(href="https://github.com/c-bata/go-prompt") https://github.com/c-bata/go-prompt
+      dd "A library for building powerful interactive prompts inspired by python-prompt-toolkit"
+    h3 Contribution
+    p
+      | Show all →
+      a(href="https://github.com/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aunasuke+archived%3Afalse+is%3Aclosed+is%3Apublic+-user%3Aunasuke")
+        | &nbsp;https://github.com/pulls?utf8=†&q=is:pr author:unasuke archived:false is:public is:closed -user:unasuke
+    h4 Pickups
+    ul
+      li: a(href="https://github.com/2factorauth/twofactorauth/pull/3871")
+        | Update RubyGems.org 2FA status by unasuke · Pull Request #3871 · 2factorauth/twofactorauth
+      li: a(href="https://github.com/argtable/argtable3/pull/31")
+        | Assign execute permission to tools/build by unasuke · Pull Request #31 · argtable/argtable3
+      li: a(href="https://github.com/itamae-kitchen/itamae/pull/273")
+        | Disable mash warnings (review catch up) by unasuke · Pull Request #273 · itamae-kitchen/itamae
+      li: a(href="https://github.com/inabagumi/neru-camera/pull/37")
+        | Call video.play() in dispatched 'loadeddata' event by unasuke · Pull Request #37 · inabagumi/neru-camera
+      li: a(href="https://github.com/rabbit-shocker/rabbit/pull/116")
+        | Add support '--licenses' option in 'rabbit-slide new' by unasuke · Pull Request #116 · rabbit-shocker/rabbit
+      li: a(href="https://github.com/mikel/mail/pull/1221")
+        | Set full path of the ragel source file to rake task by unasuke · Pull Request #1221 · mikel/mail
+      li: a(href="https://github.com/mikel/mail/pull/1222")
+        | Reduce warnings "mismatched indentations" on ruby 2.6 by unasuke · Pull Request #1222 · mikel/mail
+
+  section.slides
+    h2 Slides
+    p
+      | Show all →
+      a(Href="/slides")
+        | &nbsp;/slides
+    ul
+      li: a(href="https://slide.rabbit-shocker.org/authors/unasuke/") https://slide.rabbit-shocker.org/authors/unasuke/
+      li: a(href="https://github.com/search?o=desc&q=user%3Aunasuke+topic%3Aslide&s=updated&type=Repositories") https://github.com/search?o=desc&q=user%3Aunasuke+topic%3Aslide&s=updated&type=Repositories
+
+  section.articles
+    h2 Articles
+    h3 Bank
+    ul
+      li: a(href="https://tech.bank.co.jp/entry/2019/07/29/170000") 急に外部APIとの通信が "dh key too small" で失敗するようになったのはなぜ？ - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2019/07/10/150000") 社内GPU機の構成をItamaeで管理するようにしたことと、その反省点について - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2019/04/24/150000") オフィスネットワークを刷新し、Cisco Merakiを導入しました。 - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2019/04/23/160000") RubyKaigi 2019に弊社から2人が業務扱いで参加してきました - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2018/12/06/150000") Japan Container Days v18.12 参加レポート - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2018/11/21/150000") sidekiq-cronアップデートへの道のり - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2018/10/15/150000") Google Cloud NEXT'18 in Tokyoで登壇しました - BANK tech blog
+      li: a(href="https://tech.bank.co.jp/entry/2018/09/18/150000") 大量のPush通知をCloud Functions経由で送信する - BANK tech blog
+    h3 spice life
+    ul
+      li: a(href="http://blog.spicelife.jp/entry/2017/12/05/124306") 弊社エンジニア2名が福岡Ruby会議02前夜祭でLTをしてきました - スパイスな人生
+      / https://web.archive.org/web/20190909055810/http://blog.spicelife.jp/entry/2017/12/05/124306
+      li: a(href="http://blog.spicelife.jp/entry/2017/11/24/165708") STEERSのSSL/TLS証明書をACMのDNS Validationで発行したものに差し替えました - スパイスな人生
+      / https://web.archive.org/web/20190909055736/http://blog.spicelife.jp/entry/2017/11/24/165708
+      li: a(href="http://blog.spicelife.jp/entry/2017/09/05/183605") ridgepoleのapplyをECS RunTaskで実行するようにしました - スパイスな人生
+      / https://web.archive.org/web/20190909055653/http://blog.spicelife.jp/entry/2017/09/05/183605
+      li: a(href="http://blog.spicelife.jp/entry/2017/07/06/140349") RailsアプリをECSで運用するまでにやったこと、これからしていくこと - スパイスな人生
+      / https://web.archive.org/web/20190909055609/http://blog.spicelife.jp/entry/2017/07/06/140349
+      li: a(href="http://blog.spicelife.jp/entry/2017/03/14/114041") AWS CloudWatch Eventsをcronとして使う powered by maekawa - スパイスな人生
+      / https://web.archive.org/web/20190909055239/http://blog.spicelife.jp/entry/2017/03/14/114041
+      li: a(href="http://blog.spicelife.jp/entry/2017/02/24/113544") 社全体で使うrubocop.ymlを定義して、TMIXとSTEERSに適用しました - スパイスな人生
+      / https://web.archive.org/web/20190909055326/http://blog.spicelife.jp/entry/2017/02/24/113544
+      li: a(href="http://blog.spicelife.jp/entry/2016/06/24/145823") Dockercon 2016に参加してきました - スパイスな人生
+      / https://web.archive.org/web/20190909055459/http://blog.spicelife.jp/entry/2016/06/24/145823
+      li: a(href="http://blog.spicelife.jp/entry/2016/06/16/152330") spicelifeのエンジニアは、どんな開発環境で仕事をしているの？ - スパイスな人生
+      / https://web.archive.org/web/20190909055427/http://blog.spicelife.jp/entry/2016/06/16/152330
+      li: a(href="http://blog.spicelife.jp/entry/2015/12/22/145028") TMIXのRailsを4.2.5にアップデートしました。 - スパイスな人生
+      / https://web.archive.org/web/20190909055606/http://blog.spicelife.jp/entry/2015/12/22/145028
+      li: a(href="http://blog.spicelife.jp/entry/2015/07/13/181718") 新卒がまたtmixのRailsを4.1に上げた話 - スパイスな人生
+      / https://web.archive.org/web/20190909055310/http://blog.spicelife.jp/entry/2015/07/13/181718
+      li: a(href="http://blog.spicelife.jp/entry/2015/04/20/181533") 新卒エンジニアが入社早々tmixのRailsメジャーバージョンアップをした話 - スパイスな人生
+      / https://web.archive.org/web/20190909055302/http://blog.spicelife.jp/entry/2015/04/20/181533
+
+  section.communities
+    h2 Communities
+    dl
+      dt: a(href="http://kosen10s.net/") Kosen10s http://kosen10s.net/
+      dd 2010年に高専入学した人のコミュニティ
+
+      dt: a(href="https://kosendj-bu.in/") 高専DJ部 https://kosendj-bu.in/
+      dd 「高専DJ部」は高専生やそのOB/OGが集まってDJをやる部活動です。 (as organizer)
+
+      dt: a(href="http://kosenconf.jp/") 高専カンファレンス http://kosenconf.jp/
+      dd 「高専カンファレンス」とは、その名称を用いて行われる、高等専門学校および高専生をテーマとする、勉強会をはじめとした各種活動（以下、「個別の活動」と言う）の総称、およびその集合体（以下、「コミュニティ」と言う）の名称のことを言います。
+
+      dt: a(href="https://rails.terakoya.io/") Rails寺子屋 https://rails.terakoya.io/
+      dd Rails寺子屋はWebアプリを作るための強力なツール"Ruby on Rails"を使ってWebアプリ作りを実践しながら学ぶイベントです。
+
+  section.portfolios
+    h2 Portfolios
+    ul
+      li: a(href="https://portfolio.forkwell.com/@unasuke") https://portfolio.forkwell.com/@unasuke
+      li: a(href="https://findy-code.io/share_profiles/m7ClIczJlzhvs") https://findy-code.io/share_profiles/m7ClIczJlzhvs
+      li: a(href="https://job-draft.jp/users/7624") https://job-draft.jp/users/7624
+      li: a(href="https://lapras.com/public/VBGTNM6") https://lapras.com/public/VBGTNM6
+
+  a(href="/") Back to index
