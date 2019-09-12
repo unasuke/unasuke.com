@@ -3,7 +3,8 @@
 
 html {
   color: $font_color;
-  font-family: $font-family-humanist-sans-serif;
+  font-family: $font-family-yu;
+  font-feature-settings: "pkna" 1;
   font-size: 16px;
 
   body {
