@@ -1,12 +1,87 @@
 @charset "utf-8";
 @import "imports";
 
-section {
-  @include outer-container;
-  font-family: $font-family-sans-serif;
+html, body {
+  box-sizing: border-box;
 }
 
-a.link {
+section {
+  padding-left: 1rem;
+  overflow-wrap: break-word;
+  font-family: $font-family-yu;
+
+  @include media(max-width 320px) {
+    padding-left: 0.5rem;
+  }
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".";
+}
+
+section.index {
+  margin-bottom: 0;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.border-container {
+  border: 2px solid $main_color;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  margin-left: -4px;
+}
+
+.circle {
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px $main_color, 0px 0px 0px 6px #fff;
+  position: relative;
+  margin-right: 0.8rem;
+
+  &::before, &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 2px;
+    top: 3px;
+    background-color: $main_color;
+  }
+
+  &::before {
+    left: 10px;
+  }
+
+  &::after {
+    right: 10px;
+  }
+}
+
+section.title {
+  h1 {
+    font-weight: normal;
+    margin-top: 2rem;
+  }
+}
+
+section.contents, section.links {
+  ul.list-of-contents, ul.list-of-accounts {
+    padding-left: 1rem;
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+a {
+  color: $font_color;
   text-decoration: none;
   color: inherit;
 
@@ -15,58 +90,6 @@ a.link {
   }
 }
 
-section.main, section.contents, section.links {
-  @include shift(4);
-  font-size: 1.5rem;
-
-  @include media(min-width 0 max-width 426px) {
-    @include shift(1);
-    font-size: 1rem;
-  }
-}
-
-.main {
-  padding-top: 20vh;
-
-  h1.site-title {
-    text-align: left;
-    font-size: 6rem;
-    font-weight: normal;
-    margin-bottom: 10px;
-  }
-
-  @include media(min-width 0 max-width 426px) {
-    padding-top: 5vh;
-
-    h1.site-title {
-      font-size: 2.5rem;
-    }
-  }
-}
-
-section.contents {
-  ul.list-of-contents {
-    padding: 0;
-    list-style-type: none;
-
-    li {
-      margin-bottom: 15px;
-    }
-  }
-}
-
-.links {
-  ul.list-of-accounts {
-    padding: 0;
-    list-style-type: none;
-
-    li {
-      margin-bottom: 20px;
-    }
-  }
-
-  .fab {
-    width: 40px;
-    font-size: 2rem;
-  }
+li {
+  margin-bottom: 0.5rem;
 }

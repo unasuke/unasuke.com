@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "imports";
+
+section {
+  padding-left: 1rem;
+  overflow-wrap: break-word;
+
+  @include media(max-width 320px) {
+    padding-left: 0.5rem;
+  }
+}
+
+section.aboutme {
+  border: 2px solid $main_color;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+
+  @include media(max-width 320px) {
+    padding-right: 0;
+  }
+}
+
+section.skills, section.social-accounts, section.timeline {
+  margin-bottom: 3rem;
+
+  @include media(max-width 320px) {
+    padding-left: 0;
+    margin-inline-start: 0rem;
+  }
+}
+
+section.skills {
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+dd {
+  margin-bottom: 1.5rem;
+  margin-inline-start: 1.5rem;
+
+  @include media(max-width 320px) {
+    margin-inline-start: 0rem;
+    margin-left: 0rem; // for mobile safari
+  }
+
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: $font_color;
+}
