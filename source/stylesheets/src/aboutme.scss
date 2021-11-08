@@ -21,7 +21,10 @@ section.aboutme {
   }
 }
 
-section.skills, section.social-accounts, section.timeline {
+section.skills,
+section.social-accounts,
+section.timeline,
+section.proifile {
   margin-bottom: 3rem;
 
   @include media(max-width 320px) {
@@ -44,7 +47,6 @@ dd {
     margin-inline-start: 0rem;
     margin-left: 0rem; // for mobile safari
   }
-
 }
 
 li {
