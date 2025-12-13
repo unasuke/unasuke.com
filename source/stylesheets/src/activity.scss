@@ -47,10 +47,5 @@ li {
 
 a {
   color: $font_color;
-  text-decoration: none;
   color: inherit;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }

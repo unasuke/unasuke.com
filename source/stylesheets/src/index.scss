@@ -82,12 +82,7 @@ section.contents, section.links {
 
 a {
   color: $font_color;
-  text-decoration: none;
   color: inherit;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 li {
