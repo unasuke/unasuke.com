@@ -9,6 +9,7 @@ module.exports = {
     sponsor: "./source/stylesheets/src/sponsor.scss",
     activity: "./source/stylesheets/src/activity.scss",
     aboutme: "./source/stylesheets/src/aboutme.scss",
+    pay: "./source/stylesheets/src/pay.scss",
   },
   output: {
     path: path.resolve(__dirname, "source/stylesheets/"),
