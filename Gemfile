@@ -12,3 +12,7 @@ gem 'middleman-livereload'
 # gem 'middleman-s3_sync', github: 'fredjean/middleman-s3_sync'
 gem 'slim'
 gem 'webrick'
+gem "mutex_m"
+gem "bigdecimal"
+gem "base64"
+gem "csv"

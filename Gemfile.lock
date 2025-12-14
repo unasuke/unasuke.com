@@ -9,6 +9,8 @@ GEM
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     backports (3.18.2)
+    base64 (0.3.0)
+    bigdecimal (3.3.1)
     bourbon (7.0.0)
       thor (~> 1.0)
     coffee-script (2.4.1)
@@ -17,6 +19,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.7)
     contracts (0.13.0)
+    csv (3.3.5)
     dotenv (2.7.6)
     em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
@@ -78,6 +81,7 @@ GEM
       middleman-core (>= 3.3)
       rack-livereload (~> 0.3.15)
     minitest (5.27.0)
+    mutex_m (0.3.0)
     neat (1.7.4)
       bourbon (>= 4.0)
       sass (>= 3.3)
@@ -121,9 +125,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  base64
+  bigdecimal
   bourbon
+  csv
   middleman (>= 4.0.0)
   middleman-livereload
+  mutex_m
   neat
   slim
   webrick
