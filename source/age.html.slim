@@ -1,8 +1,0 @@
-p#age(style="font-size: 20px; padding: 20px;")
-
-script(src="https://cdn.jsdelivr.net/npm/ruby-3_2-wasm-wasi@2.0.0/dist/browser.script.iife.js")
-script(type="text/ruby")
-  |
-    require "js"
-    age = JS.global[:document].getElementById("age")
-    age[:innerText] = rand(20.0...100.0)

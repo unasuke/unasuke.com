@@ -1,0 +1,46 @@
+---
+title: "sponsor | unasuke.com"
+---
+
+<% sponsors = YAML.load(File.read(File.join("source", "data", "sponsors.yml"))) %>
+<%= stylesheet_link_tag :sponsor %>
+
+<section class="greeting">
+  <div class="message">
+    <h1>They are sponsors of the "unasuke.com".</h1>
+    <p>Many thanks!</p>
+  </div>
+</section>
+<section class="sponsors">
+  <% sponsors.each_slice(3) do |_sponsors| %>
+    <div class="row">
+      <% _sponsors.each do |person, data| %>
+        <div class="sponsor">
+          <div class="card">
+            <%= image_tag "sponsors/#{data['image']}", class: "image" %>
+            <div class="name">
+              <%= data["name"] %>
+            </div>
+            <div class="account">
+              <span><i class="fab fa-twitter"></i></span>
+              <span>
+                <a class="link" href="https://twitter.com/<%= data["twitter"] %>">
+                  <%= data["twitter"] %>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</section>
+<section class="link-to-sponsor">
+  <del>
+    <a class="link" href="https://steers.jp/c/6b819cbcc96b6727"></a>
+    I want to be a sponsor of the unasuke!
+  </del>
+</section>
+<section class="link-to-index">
+  <a class="link" href="/">back to the index page.</a>
+</section>
