@@ -11,8 +11,6 @@ GEM
     backports (3.18.2)
     base64 (0.3.0)
     bigdecimal (3.3.1)
-    bourbon (7.0.0)
-      thor (~> 1.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -82,9 +80,6 @@ GEM
       rack-livereload (~> 0.3.15)
     minitest (5.27.0)
     mutex_m (0.3.0)
-    neat (1.7.4)
-      bourbon (>= 4.0)
-      sass (>= 3.3)
     padrino-helpers (0.13.3.4)
       i18n (~> 0.6, >= 0.6.7)
       padrino-support (= 0.13.3.4)
@@ -100,11 +95,6 @@ GEM
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rexml (3.2.5)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -127,12 +117,10 @@ PLATFORMS
 DEPENDENCIES
   base64
   bigdecimal
-  bourbon
   csv
   middleman (>= 4.0.0)
   middleman-livereload
   mutex_m
-  neat
   slim
   webrick
 
