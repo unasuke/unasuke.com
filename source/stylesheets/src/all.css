@@ -7,7 +7,7 @@
   --font-color: var(--main-color);
   --content-widthstandard: 1000px;
   --small-device-width: 768px;
-  --font-noto: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'Arial', "游ゴシック体", YuGothic, "Yu Gothic Medium", "Noto Sans JP", sans-serif;
+  --font-noto: 'Helvetica Neue', Helvetica, 'Arial', "Noto Sans JP", sans-serif;
 }
 
 html {
@@ -22,10 +22,6 @@ html {
 }
 
 @utility circle {
-  margin: 0;
-  padding: 0;
-  border: none;
-
   border-radius: 4px;
   width: 8px;
   height: 8px;
@@ -42,9 +38,6 @@ html {
     height: 2px;
     top: 3px;
     background-color: var(--main-color);
-    margin: unset;
-    padding: unset;
-    border: unset;
   }
 
   &::before {
