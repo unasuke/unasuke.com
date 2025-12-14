@@ -53,13 +53,13 @@ activate :external_pipeline,
   command: "npm run build#{build? ? '': ':watch'}",
   source: ".tmp/dest"
 
-activate :s3_sync do |s3_sync|
-  s3_sync.region                     = 'ap-northeast-1'
-  s3_sync.after_build                = false
-  s3_sync.prefer_gzip                = true
-  s3_sync.path_style                 = true
-  s3_sync.acl                        = 'public-read'
-  s3_sync.encryption                 = false
-  s3_sync.index_document             = 'index.html'
-  s3_sync.error_document             = '404/index.html'
-end
+# activate :s3_sync do |s3_sync|
+#   s3_sync.region                     = 'ap-northeast-1'
+#   s3_sync.after_build                = false
+#   s3_sync.prefer_gzip                = true
+#   s3_sync.path_style                 = true
+#   s3_sync.acl                        = 'public-read'
+#   s3_sync.encryption                 = false
+#   s3_sync.index_document             = 'index.html'
+#   s3_sync.error_document             = '404/index.html'
+# end
