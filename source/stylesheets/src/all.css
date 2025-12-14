@@ -1,1 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap');
 @import "tailwindcss";
+
+:root {
+  --main-color: #211c27;
+  --background-color: #f5f1f1;
+  --font-color: var(--main-color);
+  --content-widthstandard: 1000px;
+  --small-device-width: 768px;
+  --font-noto: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, 'Arial', "游ゴシック体", YuGothic, "Yu Gothic Medium", "Noto Sans JP", sans-serif;
+}
+
+html {
+  font-size: 16px;
+  font-feature-settings: "pkna" 1;
+}
+
+@utility grid-template {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ".";
+}
+
+@utility circle {
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  border-radius: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 2px var(--main-color), 0px 0px 0px 6px #fff;
+  position: relative;
+  margin-right: 0.8rem;
+
+  &::after, &::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 5px;
+    height: 2px;
+    top: 3px;
+    background-color: var(--main-color);
+    margin: unset;
+    padding: unset;
+    border: unset;
+  }
+
+  &::before {
+    left: 10px;
+  }
+  &::after {
+    right: 10px;
+  }
+}
