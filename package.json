@@ -4,8 +4,8 @@
   "description": "unasuke.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "",
-    "build:watch": ""
+    "build": "tailwindcss -i ./source/stylesheets/src/all.css -o ./source/stylesheets/all.css",
+    "build:watch": "tailwindcss -i ./source/stylesheets/src/all.css -o ./source/stylesheets/all.css --watch"
   },
   "repository": {
     "type": "git",
